@@ -26,7 +26,7 @@ File-BSDGlob - rozszerzenie perla dla rutyny BSD glob.
 
 %build
 perl Makefile.PL
-%{__make} OPTIMIZE="%{!?debug:$RPM_OPT_FLAGS}%{?debug:-O -g}"
+%{__make} OPTIMIZE="%{!?debug:$RPM_OPT_FLAGS}%{?debug:-O0 -g}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
