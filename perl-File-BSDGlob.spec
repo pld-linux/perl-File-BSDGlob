@@ -9,7 +9,7 @@ Summary:	File::BSDGlob - Perl extension for BSD glob routine
 Summary(pl):	File::BSDGlob - rozszerzenie Perla o funkcjê BSD glob
 Name:		perl-File-BSDGlob
 Version:	0.94
-Release:	8
+Release:	9
 License:	BSD
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
