@@ -1,0 +1,58 @@
+Summary:	File-BSDGlob perl module
+Summary(pl):	Modu³ perla File-BSDGlob
+Name:		perl-File-BSDGlob
+Version:	0.94
+Release:	3
+Copyright:	GPL
+Group:		Development/Languages/Perl
+Group(pl):	Programowanie/Jêzyki/Perl
+Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/File/File-BSDGlob-%{version}.tar.gz
+BuildRequires:	perl >= 5.005_03-10
+%requires_eq	perl
+Requires:	%{perl_sitearch}
+BuildRoot:	/tmp/%{name}-%{version}-root
+
+%description
+File-BSDGlob - Perl extension for BSD glob routine.
+
+%description -l pl
+File-BSDGlob - rozszerzenie perla dla rutyny BSD glob.
+
+%prep
+%setup -q -n File-BSDGlob-%{version}
+
+%build
+perl Makefile.PL
+make
+
+%install
+rm -rf $RPM_BUILD_ROOT
+make install DESTDIR=$RPM_BUILD_ROOT
+
+strip --strip-unneeded $RPM_BUILD_ROOT/%{perl_sitearch}/auto/File/BSDGlob/*.so
+
+(
+  cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/File/BSDGlob
+  sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
+  mv .packlist.new .packlist
+)
+
+gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
+        Changes README TODO
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(644,root,root,755)
+%doc {Changes,README,TODO}.gz
+
+%{perl_sitearch}/File/BSDGlob.pm
+
+%dir %{perl_sitearch}/auto/File/BSDGlob
+%{perl_sitearch}/auto/File/BSDGlob/.packlist
+%{perl_sitearch}/auto/File/BSDGlob/autosplit.ix
+%{perl_sitearch}/auto/File/BSDGlob/BSDGlob.bs
+%attr(755,root,root) %{perl_sitearch}/auto/File/BSDGlob/BSDGlob.so
+
+%{_mandir}/man3/*
