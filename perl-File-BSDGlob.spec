@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	File
-%define	pnam	BSDGlob
+%define		pdir	File
+%define		pnam	BSDGlob
 Summary:	File::BSDGlob - Perl extension for BSD glob routine
 Summary(pl):	File::BSDGlob - rozszerzenie Perla o funkcjê BSD glob
 Name:		perl-File-BSDGlob
