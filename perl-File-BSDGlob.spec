@@ -34,7 +34,8 @@ FreeBSD, która jest nadzbiorem glob() z POSIX-a (opisanej w IEEE Std
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-%{__make} OPTIMIZE="%{rpmcflags}"
+%{__make} \
+	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
 
