@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	File
 %define	pnam	BSDGlob
-Summary:	File-BSDGlob perl module
-Summary(pl):	Modu³ perla File-BSDGlob
+Summary:	File::BSDGlob perl module
+Summary(pl):	Modu³ perla File::BSDGlob
 Name:		perl-File-BSDGlob
 Version:	0.94
 Release:	7
@@ -14,10 +14,10 @@ BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-File-BSDGlob - Perl extension for BSD glob routine.
+File::BSDGlob - Perl extension for BSD glob routine.
 
 %description -l pl
-File-BSDGlob - rozszerzenie perla dla rutyny BSD glob.
+File::BSDGlob - rozszerzenie perla dla rutyny BSD glob.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
