@@ -31,14 +31,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf Changes README TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc Changes README TODO
 %{perl_sitearch}/File/BSDGlob.pm
 %dir %{perl_sitearch}/auto/File/BSDGlob
 %{perl_sitearch}/auto/File/BSDGlob/autosplit.ix
