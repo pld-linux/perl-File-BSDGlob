@@ -5,7 +5,7 @@ Summary:	File::BSDGlob perl module
 Summary(pl):	Modu³ perla File::BSDGlob
 Name:		perl-File-BSDGlob
 Version:	0.94
-Release:	7
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
