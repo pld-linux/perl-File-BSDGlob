@@ -1,12 +1,12 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	File
 %define	pnam	BSDGlob
-Summary:	File::BSDGlob perl module
-Summary(pl):	Modu³ perla File::BSDGlob
+Summary:	File::BSDGlob - Perl extension for BSD glob routine
+Summary(pl):	File::BSDGlob - rozszerzenie Perla o funkcjê BSD glob
 Name:		perl-File-BSDGlob
 Version:	0.94
 Release:	8
-License:	GPL
+License:	BSD
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	18e95f120d8096d8c55aaa47c06681bc
@@ -15,10 +15,14 @@ BuildRequires:	perl-devel >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-File::BSDGlob - Perl extension for BSD glob routine.
+File::BSDGlob Perl module implements the FreeBSD glob(3) routine,
+which is a superset of the POSIX glob() (described in IEEE Std 1003.2
+"POSIX.2").
 
 %description -l pl
-File::BSDGlob - rozszerzenie perla dla rutyny BSD glob.
+Modu³ Perla File::BSDGlob stanowi implementacjê funkcji glob(3) z
+FreeBSD, która jest nadzbiorem glob() z POSIX-a (opisanej w IEEE Std
+1003.2 "POSIX.2").
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
