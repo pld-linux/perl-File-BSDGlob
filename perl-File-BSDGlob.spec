@@ -6,7 +6,7 @@
 %define		pdir	File
 %define		pnam	BSDGlob
 Summary:	File::BSDGlob - Perl extension for BSD glob routine
-Summary(pl):	File::BSDGlob - rozszerzenie Perla o funkcjê BSD glob
+Summary(pl.UTF-8):   File::BSDGlob - rozszerzenie Perla o funkcjÄ™ BSD glob
 Name:		perl-File-BSDGlob
 Version:	0.94
 Release:	9
@@ -23,9 +23,9 @@ File::BSDGlob Perl module implements the FreeBSD glob(3) routine,
 which is a superset of the POSIX glob() (described in IEEE Std 1003.2
 "POSIX.2").
 
-%description -l pl
-Modu³ Perla File::BSDGlob stanowi implementacjê funkcji glob(3) z
-FreeBSD, która jest nadzbiorem glob() z POSIX-a (opisanej w IEEE Std
+%description -l pl.UTF-8
+ModuÅ‚ Perla File::BSDGlob stanowi implementacjÄ™ funkcji glob(3) z
+FreeBSD, ktÃ³ra jest nadzbiorem glob() z POSIX-a (opisanej w IEEE Std
 1003.2 "POSIX.2").
 
 %prep
