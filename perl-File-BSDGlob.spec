@@ -6,7 +6,7 @@
 %define		pdir	File
 %define		pnam	BSDGlob
 Summary:	File::BSDGlob - Perl extension for BSD glob routine
-Summary(pl.UTF-8):   File::BSDGlob - rozszerzenie Perla o funkcję BSD glob
+Summary(pl.UTF-8):	File::BSDGlob - rozszerzenie Perla o funkcję BSD glob
 Name:		perl-File-BSDGlob
 Version:	0.94
 Release:	9
