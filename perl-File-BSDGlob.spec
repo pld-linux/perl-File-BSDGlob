@@ -56,6 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/File/BSDGlob.pm
 %dir %{perl_vendorarch}/auto/File/BSDGlob
 %{perl_vendorarch}/auto/File/BSDGlob/autosplit.ix
-%{perl_vendorarch}/auto/File/BSDGlob/BSDGlob.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/File/BSDGlob/BSDGlob.so
 %{_mandir}/man3/*
