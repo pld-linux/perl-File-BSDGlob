@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	File
 %define		pnam	BSDGlob
 Summary:	File::BSDGlob - Perl extension for BSD glob routine
